@@ -25,13 +25,13 @@ ENV HOME=/home/theia \
     THEIA_DEFAULT_PLUGINS=local-dir:/home/theia/plugins \
     USE_LOCAL_GIT=true \
     TINI_KILL_PROCESS_GROUP=1 \
-    JAVA_HOME=/usr/lib/jvm/java-11-openjdk \
+    JAVA_HOME=/usr/lib/jvm/java-17-openjdk \
     MAVEN_HOME=/usr/share/java/maven-3 \
     GRADLE_HOME=/usr/share/java/gradle
 
 # Whenever possible, install tools using the distro package manager
 RUN apk add --no-cache git openssh bash libsecret \
-    tini jq curl socat openjdk11-jdk openjdk11-jmods gradle maven
+    tini jq curl socat openjdk17-jdk openjdk17-jmods gradle maven
 
 # Add user
 RUN addgroup theia && \

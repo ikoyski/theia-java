@@ -13,7 +13,7 @@ Therefore, I decided to revamp this project to update it, improve security and f
 ## Features
 * Multi arch: x64 or arm64
 * Based on Alpine 3.14 / node 12.22.7 / yarn 1.22.15
-* Includes OpenJDK 11, Maven 3.6.3 and Gradle 6.8.3
+* Includes OpenJDK 17, Maven 3.6.3 and Gradle 6.8.3
 * Rellative small footprint: ~ 900 MB
 * Runs as the "theia" user (UID=1000, GID=1000)
 * No root access, no sudo
